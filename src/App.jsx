@@ -101,19 +101,23 @@ function App() {
               <strong>Price:</strong> ₹{product.price}
             </p>
 
-            <button
-              onClick={() => setSelectedProduct(product)}
-              style={{
-                backgroundColor: "red",
-                color: "white",
-                border: "none",
-                padding: "10px",
-                borderRadius: "5px",
-                cursor: "pointer",
-              }}
-            >
-              View Details
-            </button>
+           <button
+  onClick={() => {
+    console.log("Button clicked");
+    console.log(product);
+    setSelectedProduct(product);
+  }}
+  style={{
+    backgroundColor: "red",
+    color: "white",
+    border: "none",
+    padding: "10px",
+    borderRadius: "5px",
+    cursor: "pointer",
+  }}
+>
+  View Details
+</button>
           </div>
         ))}
       </div>
